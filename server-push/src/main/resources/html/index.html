@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>SSE Demo</title>
+</head>
+<body>
+<div id="msg_from_server"></div>
+<div id="sse"></div>
+<script>
+    // var sse = new EventSource('http://localhost:8080/sse');
+    const sse = new EventSource('http://localhost:8080/sse-retry');
+    sse.onmessage = function (evt) {
+        const el = document.getElementById('sse');
+        el.innerHTML = evt.data;
+    }
+</script>
+</body>
+</html>
