@@ -23,12 +23,13 @@
     <description>PracticeProject</description>
     <properties>
         <java.version>11</java.version>
-        <hutool.version>5.8.9</hutool.version>
+        <hutool.version>5.8.16</hutool.version>
         <spring-plugin.version>2.0.0.RELEASE</spring-plugin.version>
         <jackson.version>2.13.4.2</jackson.version>
         <okhttp.version>4.10.0</okhttp.version>
-        <mybatis-plus.version>3.5.2</mybatis-plus.version>
-        <mybatis-plus-generator.version>3.5.3</mybatis-plus-generator.version>
+        <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
+        <mybatis-plus-generator.version>3.5.3.1</mybatis-plus-generator.version>
+        <mysql.version>8.0.32</mysql.version>
     </properties>
     <dependencies>
         <dependency>
@@ -82,6 +83,12 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatis-plus-generator.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
 
         </dependencies>

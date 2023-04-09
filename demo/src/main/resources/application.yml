@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.139.93.181:3306/t?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: G3xfGgW4
+logging:
+  #日志级别
+  level:
+    #根日志
+    root: debug
+  pattern:
+    console: '%p%m%n'
