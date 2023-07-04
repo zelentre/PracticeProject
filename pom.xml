@@ -23,7 +23,7 @@
     <description>PracticeProject</description>
     <properties>
         <java.version>11</java.version>
-        <hutool.version>5.8.16</hutool.version>
+        <hutool.version>5.8.20</hutool.version>
         <spring-plugin.version>2.0.0.RELEASE</spring-plugin.version>
         <jackson.version>2.13.4.2</jackson.version>
         <okhttp.version>4.10.0</okhttp.version>
